@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <!-- Required Meta Tags -->
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+
+  <!-- Title of Document (Tab) -->
+  <title>Trivia Game!</title>
+
+  <!-- Bootstrap, FontAwesome, and my personal CSS Links respectively -->
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO'
+    crossorigin='anonymous'>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' integrity='sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU'
+    crossorigin='anonymous'>
+  <link rel='stylesheet' type='text/css' href='assets/css/style.css'>
+
+  <!-- Link including various Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Vollkorn" rel="stylesheet">
+
+</head>
+
+<body style="background-image: url('http://www.designbolts.com/wp-content/uploads/2013/02/Golf-Shirt-Grey-Seamless-Pattern-For-Website-Background.jpg');">
+  <div class="container" style="background: gray">
+    <!-- First row for the Jumbotron, it's the title of the game -->
+    <div class="row">
+      <div class="col-12 mb-0">
+        <div class="jumbotron mx-auto text-center my-0" style="font-family: 'Lobster Two', cursive; background: transparent; font-size: 96px;">
+          <i class="fas fa-film"></i> Movie Trivia! <i class="fas fa-film"></i>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-12 text-center mx-auto" style="font-size: 64px; font-family: 'Lobster Two', cursive;">
+        <span id="remainingTime"></span><br>
+        <span id="score-text" style="visibility: hidden"></span>
+      </div>
+    </div>
+    <div class="row mb-3 question-row">
+      <div class="col-12 text-center mx-auto" style="font-family: 'Vollkorn', serif; font-size: 28px;">
+        What film was directed by Quentin Tarantino, and starred Samuel L. Jackson as Jules Winnfield and John Travolta as Vincent Vega?<br>
+        <button type="button" class="btn btn-primary wrong-answer question-1">Harry Potter and the Chamber of Secrets</button>
+        <button type="button" class="btn btn-primary right-answer-1 question-1">Pulp Fiction</button>
+        <button type="button" class="btn btn-primary wrong-answer question-1">A Clockwork Orange</button>
+        <button type="button" class="btn btn-primary wrong-answer question-1">The Sixth Sense</button>
+        <hr>
+      </div>
+    </div>
+    <div class="row my-3 question-row">
+      <div class="col-12 text-center mx-auto" style="font-family: 'Vollkorn', serif; font-size: 28px;">
+        What actor played Don Vito Corleone in The Godfather(1972)?<br>
+        <button type="button" class="btn btn-primary wrong-answer question-2">James Caan</button>
+        <button type="button" class="btn btn-primary wrong-answer question-2">Al Pacino</button>
+        <button type="button" class="btn btn-primary right-answer-2 question-2">Marlon Brando</button>
+        <button type="button" class="btn btn-primary wrong-answer question-2">Francis Ford Coppola</button>
+        <hr>
+      </div>
+    </div>
+    <div class="row my-3 question-row">
+      <div class="col-12 text-center mx-auto" style="font-family: 'Vollkorn', serif; font-size: 28px;">
+        What film was directed by David Fincher, and starred Brad Pitt as Tyler Durden and Edward Norton as the Narrator? (My favorite movie!)<br>
+        <button type="button" class="btn btn-primary wrong-answer question-3">Saving Private Ryan</button>
+        <button type="button" class="btn btn-primary wrong-answer question-3">The Departed</button>
+        <button type="button" class="btn btn-primary wrong-answer question-3">Aliens</button>
+        <button type="button" class="btn btn-primary right-answer-3 question-3">Fight Club</button>
+        <hr>
+      </div>
+    </div>
+    <div class="row question-row">
+      <div class="col-12 text-center mx-auto mb-3" style="font-family: 'Vollkorn', serif; font-size: 28px;">
+        What actor played Neo in The Matrix trilogy?<br>
+        <button type="button" class="btn btn-primary wrong-answer question-4">Will Ferrell</button>
+        <button type="button" class="btn btn-primary wrong-answer question-4">Jay Leno</button>
+        <button type="button" class="btn btn-primary wrong-answer question-4">Owen Wilson</button>
+        <button type="button" class="btn btn-primary right-answer-4 question-4">Keanu Reeves</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Javascript/jQuery links -->
+  <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
+    crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js' integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49'
+    crossorigin='anonymous'></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js' integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy'
+    crossorigin='anonymous'></script>
+  <script src='assets/javascript/app.js'></script>
+</body>
+
+</html>
